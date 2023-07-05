@@ -1,0 +1,43 @@
+:root{
+    --color: #e6007e;
+    --txt: rgb(191, 176, 176);
+    background-color: black;
+    overflow:hidden;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--txt);
+   
+    /* outline: 1px solid red; */
+}
+.main{
+   display:flex;
+   flex-flow:row wrap;
+}
+ .left-bg{
+   
+   background-image: url("./bg_left.jpg");
+   background-position-x:center;
+   background-position-y:-2cm;
+   background-size: auto;
+   background-repeat: no-repeat;
+   width: 40vw;
+}
+.right{
+    flex:1;
+    border:1px solid red;
+}
+.right h2{
+    margin-top:30%;
+    margin-left:4%;
+    margin-right:8%;
+}
+.right h3{
+    margin-top:9%;
+    margin-left:4%;
+    margin-right:8%;
+}
