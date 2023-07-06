@@ -7,23 +7,67 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main">
+    
 
    
         <div class="left-bg">
             <div class="content">
-            <h1></h1>
+               <div class="logo"> <img src="odin-lined.png"></div>
+                <div class="text">Sign-Up-Form</div>
             </div>
         </div>
        
 
         <div class="right">
+            <div class="up">
              <h2>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi!  Sign up now to get started.</h2>
              <h3>YOU KNOW YOU WANT TO<h3>
-             <form>
-
+            </div>
+           
+             <div class="mid">
+             
+                 <form>
+                <div class="form-body">
+                <h2 class="level">Lets do this</h2>
+                <fieldset class="level">
+                <fieldset class="row">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" required>
+                 </fieldset>
+                 <fieldset class="row">
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" required>
+                </fieldset>
+                </fieldset>
+                 <fieldset class="level">
+                 <fieldset class="row">
+                <label for="user_email">Email Address:</label>
+                <input type="email" id="user_email"  required>
+                 </fieldset>
+                  <fieldset class="row">
+                <label for="phone">Phone no</label>
+                <input type="number" id="phone"  minlength="10" maxlength="11" required>
+                </fieldset>
+                 </fieldset>
+                 <fieldset class="level">
+                 <fieldset class="row">
+                <label for="user_password">Password:</label>
+                <input type="password" id="user_password" required>
+                 </fieldset>
+                 <fieldset class="row">
+                <label for="confirm_password">Password:</label>
+                <input type="password" id="confirm_password" required>
+                 </fieldset>
+                 </fieldset>
+                </div>
+                <button type="submit">Create Account</button>
+                
              </form>
+            </div>
+            <div class="down">
+               <h3>ALREADY HAVE AN ACCOUNT? <br><br><a href="">LOG IN</a></h3>
+            </div>
         </div>
-    </div>
+
 </body>
 </html>

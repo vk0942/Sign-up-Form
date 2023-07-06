@@ -3,6 +3,7 @@
     --txt: rgb(191, 176, 176);
     background-color: black;
     overflow:hidden;
+    height:100%;
 }
 
 *{
@@ -14,9 +15,10 @@
    
     /* outline: 1px solid red; */
 }
-.main{
+body{
    display:flex;
-   flex-flow:row wrap;
+   /* border:3px solid yellow; */
+   min-height: 100%;
 }
  .left-bg{
    
@@ -27,17 +29,112 @@
    background-repeat: no-repeat;
    width: 40vw;
 }
+.content img{
+    width:6rem;
+    height:6rem;
+   
+}
+.logo{
+  
+    margin-right:1rem;
+}
+
+
+.content{
+  
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top:25rem;
+   
+    font-size:3rem;
+    width:100%;
+    padding-top:1.5rem;
+    padding-bottom:1.5rem;
+  
+}
 .right{
     flex:1;
-    border:1px solid red;
+    /* border:1px solid red; */
+    display:flex;
+    flex-direction:column;
+    min-height:100%;
 }
-.right h2{
-    margin-top:30%;
-    margin-left:4%;
-    margin-right:8%;
+.up {
+   margin-top:11%;
+   margin-left:11%;
 }
-.right h3{
-    margin-top:9%;
-    margin-left:4%;
-    margin-right:8%;
+.up h3{
+  margin-top:3%;
 }
+.mid{
+    
+ 
+    flex:1;
+}
+.form-body h2{
+    margin-left:13%;
+    margin-top:3%;
+    margin-bottom: 3%;
+}
+.level{
+    flex:1;
+    display:flex;
+
+}
+.row{
+    
+    margin-left:13%;
+    margin-bottom:4%;
+}
+.form-body{
+    display:flex;
+    flex-direction: column;
+    margin-top:4%;
+    background-color: rgb(23, 23, 23);
+    box-shadow: 1px 1px 2px rgb(243, 241, 244);
+
+}
+
+fieldset{
+    border:none;
+}
+.row{
+    display:flex;
+    flex-direction: column;
+}
+.down{
+    flex:1;
+    padding-left: 12%;
+    padding-top: 27px;
+}
+.mid button{
+    background-color:rgb(229, 51, 78);
+    width:12rem;
+    height:3rem;
+    color:white;
+    font-weight: 200px;
+    font-size:large;
+    margin-left:12%;
+    margin-top:4rem;
+}
+.down a{
+    color:rgb(215, 97, 117);
+}
+input {
+    border: 2px solid #c8adad;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: black;
+  }
+  
+  input:invalid {
+    border-color: rgb(135, 24, 83);
+  }
+  
+  input:valid {
+    border-color: rgb(154, 216, 245);
+  }
